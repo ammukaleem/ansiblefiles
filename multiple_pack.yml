@@ -1,0 +1,10 @@
+---
+- name: create muliple packages
+  hosts: all
+  become: true
+  tasks:
+  - name: installing packages
+    yum:
+       name: ["git", "make", "tree", "wget", "docker*", "gcc", "telnet"]
+       state: installed
+

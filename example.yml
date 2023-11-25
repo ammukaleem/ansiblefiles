@@ -1,0 +1,7 @@
+---
+- name: creating example for vault
+  hosts: all
+  become: true
+  tasks: 
+- name: installing tree
+

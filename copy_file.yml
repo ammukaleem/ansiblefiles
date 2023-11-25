@@ -1,0 +1,12 @@
+---
+- name: copieng a file
+  hosts: all
+  become: true
+  tasks:
+  - name: copy a file
+    copy:
+     src: /home/ansadmin/index.html
+     dest: /home/ansadmin
+     owner: shami
+     mode: 0666
+    

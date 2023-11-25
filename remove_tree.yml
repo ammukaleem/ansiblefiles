@@ -1,0 +1,9 @@
+---
+- name: remove tree pack
+  hosts: all
+  become: true
+  tasks: 
+     - name: rmoving tree pack
+       yum: 
+         name: tree
+         state: absent

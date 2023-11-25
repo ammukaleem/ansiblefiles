@@ -1,0 +1,10 @@
+---
+# handlers file for setup_apache_role
+- name: start httpd service
+  service:
+    name: httpd
+    state: started
+- name: start apache service
+  community.general.apache2_module:
+    state: present
+        
